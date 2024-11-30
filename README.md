@@ -20,6 +20,7 @@ This guide explains how to deploy a portfolio website built with Vite, ReactJS, 
    ```
   Replace <repository-url> with your repository link (e.g., 
   https://github.com/zaib-shekh/my-portfolio.git).
+  
   3. List the cloned folders using:
    ```Bash
         ls
