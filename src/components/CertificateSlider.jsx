@@ -15,6 +15,8 @@ import pythonds from '../assets/Pythonds.jpg';
 import pythongl from '../assets/pythonGL.jpg';
 import pythonml from '../assets/pythonml.jpg';
 import pythonskillup from '../assets/pythonskillup.jpg';
+import ai1 from '../assets/AI1.jpg';
+import ai2 from '../assets/AI2.jpg';
 
 const certificates = [
   { image: cnpython },
@@ -30,6 +32,8 @@ const certificates = [
   { image: pythonml},
   { image: pythongl},
   { image: pythonskillup},
+  { image: ai1},
+  { image: ai2}
   // Add more certificates as needed
 ];
 

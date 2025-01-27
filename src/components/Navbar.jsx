@@ -25,7 +25,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   }, []);
 
   return (
-    <nav className={`bg-transparent dark:bg-transparent fixed w-full z-10 top-0 ${scrolled ? 'hidden' : 'block'}`}>
+    <nav className={`bg-gray-100 dark:bg-gray-900 fixed w-full z-10 top-0 ${scrolled ? 'hidden' : 'block'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           {/* Left-hand side */}
