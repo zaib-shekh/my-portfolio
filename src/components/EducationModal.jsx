@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CertificationModal = ({ closeModal, certificationLink, darkMode }) => {
+const EducationModal = ({ closeModal, certificationLink, darkMode }) => {
   return (
     <div className={`modal ${darkMode ? 'dark' : ''}`}>
       <div className="modal-content">
@@ -11,4 +11,4 @@ const CertificationModal = ({ closeModal, certificationLink, darkMode }) => {
   );
 };
 
-export default CertificationModal;
+export default EducationModal;

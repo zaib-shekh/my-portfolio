@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AboutSection from './components/AboutSection';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
@@ -27,8 +27,8 @@ const App = () => {
     <>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       <Hero darkMode={darkMode} />
-      <AboutSection/>
       <Experience/>
+      <Skills/>
       <Education/>
       <Projects/>
       <CertificateSlider/>

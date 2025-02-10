@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import EducationData from './EducationData';
-import CertificationModal from './CertificationModal';
+import EducationModal from './EducationModal';
 
 const Education = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -47,7 +47,7 @@ const Education = () => {
         </div>
       </div>
       {modalOpen && (
-        <CertificationModal
+        <EducationModal
           closeModal={closeModal}
           certificationLink={selectedCertification}
           darkMode={document.documentElement.classList.contains('dark')}

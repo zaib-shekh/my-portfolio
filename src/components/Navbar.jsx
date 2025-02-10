@@ -26,7 +26,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <nav className={`bg-gray-100 dark:bg-gray-900 fixed w-full z-10 top-0 ${scrolled ? 'hidden' : 'block'}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-32 flex items-center justify-between h-16">
         <div className="flex items-center">
           {/* Left-hand side */}
           <div className="flex items-center">
@@ -36,7 +36,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               </div>
             </div>
             <a href="/" className="ml-2 text-xl lg:text-2xl font-bold font-roboto text-gray-900 dark:text-white hover:rainbow-text">
-              Shekh Zaib | Portfolio
+              Shekh Zaib
             </a>
           </div>
         </div>
@@ -44,8 +44,8 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
         <div className="flex items-center">
           <div className="hidden lg:block">
             <div className="flex items-baseline space-x-2 md:space-x-4">
-              <a href="#about" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300 ">About</a>
               <a href="#experience" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300 ">Experience</a>
+              <a href="#skills" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300 ">Skills</a>
               <a href="#education" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300">Education</a>
               <a href="#projects" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300">Projects</a>
               <a href="#certifications" className="text-sm md:text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-300 px-2 md:px-3 py-1 md:py-2 rounded-md transition duration-300 ">Certifications</a>
@@ -54,7 +54,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </div>
           </div>
           <div className="flex items-center">
-            <button onClick={toggleDarkMode} className="text-gray-900 dark:text-white focus:outline-none mr-4">
+            <button onClick={toggleDarkMode} className="text-gray-900  dark:text-white focus:outline-none mr-4">
               {darkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
             </button>
             <div className="lg:hidden">

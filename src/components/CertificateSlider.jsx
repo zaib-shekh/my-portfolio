@@ -17,6 +17,7 @@ import pythonml from '../assets/pythonml.jpg';
 import pythonskillup from '../assets/pythonskillup.jpg';
 import ai1 from '../assets/AI1.jpg';
 import ai2 from '../assets/AI2.jpg';
+import { color } from 'framer-motion';
 
 const certificates = [
   { image: cnpython },
@@ -48,6 +49,7 @@ const CertificateSlider = () => {
     autoplaySpeed: 3000,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
+    arrow: color,
   };
 
   return (

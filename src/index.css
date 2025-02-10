@@ -6,6 +6,7 @@
 /* Custom styles */
 body {
   @apply bg-white text-gray-900;
+  
 }
 
 body.dark {

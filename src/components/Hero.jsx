@@ -1,11 +1,20 @@
-import React from 'react';
+import {useState} from 'react';
 import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi';
 import { FaKaggle } from 'react-icons/fa';
 import profile from '../assets/profile.png';
 import {Link} from 'react-scroll'
+import { Typewriter } from 'react-simple-typewriter';
+import ResumeModal from './ResumeModel';
 
 const Hero = ({ darkMode}) => {
-  
+  const [modalOpen, setModalOpen] = useState(false);
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <section id="hero" className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white px-4 sm:px-6 lg:px-36">
       <div className="container mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 relative">
@@ -15,9 +24,21 @@ const Hero = ({ darkMode}) => {
         </div>
         {/* Left-hand side */}
         <div className="md:w-1/2 mb-6 md:mb-0 relative">
-          <h1 className="text-4xl font-bold mb-4">Hi! there I'm</h1>
+          <h1 className="text-4xl font-bold mb-4 text-blue-500">Hello there I am</h1>
           <h2 className="text-6xl font-bold mb-4">Shekh Zaib</h2>
-          <p className="text-2xl font-medium mb-4">Data Scientist and Web Developer</p>
+          <p className="text-2xl font-medium mb-4 text-blue-500">
+            <span className='text-gray-900 dark:text-white'>I'm a</span> 
+            <Typewriter
+              words = {[" Data Scientist", " Full-Stack Developer",]}
+              loop = {true}
+              cursor = {true}
+              cursorStyle = {'_'}
+              typeSpeed = {100}
+              deleteSpeed = {50}
+              delaySpeed = {1000}
+            />
+            
+            </p>
           <div className="flex space-x-4 mt-4">
             <a href="mailto:zaib.shekh313@gmail.com" className="relative group p-2 border-2 border-blue-500 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300">
               <FiMail size={24} />
@@ -45,8 +66,12 @@ const Hero = ({ darkMode}) => {
             </a>
           </div>
           <Link to="about" smooth={true} duration={500}>
-            <button className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-4 transition duration-300">About me</button>
-          </Link>
+          <button
+            onClick={openModal}
+            className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded transition duration-300 mt-4"
+          >
+            View Resume
+          </button>          </Link>
         </div>
         {/* Right-hand side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
@@ -59,6 +84,8 @@ const Hero = ({ darkMode}) => {
           </div>
         </div>
       </div>
+      {modalOpen && <ResumeModal closeModal={closeModal} />}
+
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FiMail, FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 
 const BuyMeACoffee = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ const BuyMeACoffee = () => {
 
   return (
     <section id='contact'>
-    <div className="bg-green-50 dark:bg-gray-900 font-[sans-serif] lg:h-screen">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 font-[sans-serif] lg:h-screen">
       <div className="grid lg:grid-cols-3 items-center max-lg:justify-center gap-6 h-full sm:p-12 p-8 max-sm:p-4">
         <div className="max-w-lg max-lg:mx-auto max-lg:text-center max-lg:mb-6">
           <h2 className="text-4xl font-extrabold text-gray-800 dark:text-white">Get In Touch</h2>
@@ -78,7 +79,7 @@ const BuyMeACoffee = () => {
             ></textarea>
             <button
               type="submit"
-              className="text-gray-800 dark:text-gray-200 bg-green-200 dark:bg-green-700 hover:bg-green-300 dark:hover:bg-green-800 font-semibold rounded-md text-sm px-6 py-3 block w-full"
+              className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded transition duration-300 mt-4 w-full"
             >
               Send Message
             </button>
@@ -86,11 +87,58 @@ const BuyMeACoffee = () => {
         </div>
 
         <div className="z-10 relative lg:col-span-2">
-          <img
-            src="https://readymadeui.com/images/analtsis.webp"
-            className="w-3/4 object-contain block mx-auto"
-            alt="Contact"
-          />
+        <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav className="flex flex-wrap justify-center -mx-5 -my-2">
+            <div className="px-5 py-2">
+                <a href="#experience" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    Experience
+                </a>
+            </div>
+            <div className="px-5 py-2">
+                <a href="#skills" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    Skills
+                </a>
+            </div>
+            <div className="px-5 py-2">
+                <a href="#education" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    Education
+                </a>
+            </div>
+            <div className="px-5 py-2">
+                <a href="#projects" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    Projects
+                </a>
+            </div>
+            <div className="px-5 py-2">
+                <a href="#certifications" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                  Certifications
+                </a>
+            </div>
+            <div className="px-5 py-2">
+                <a href="#contact" className="text-base leading-6 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    Contact
+                </a>
+            </div>
+        </nav>
+        <div className="flex justify-center mt-8 space-x-6">
+      <a href="mailto:zaib.shekh313@gmail.com" className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+        <FiMail className="w-6 h-6"/>
+      </a>
+      <a href="https://github.com/zaib-shekh" className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+        <FiGithub className="w-6 h-6"/>
+      </a>
+      <a href="https://www.instagram.com/nature_tales_oo/" className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+        <FiInstagram className="w-6 h-6" />
+      </a>
+      <a href="https://www.linkedin.com/in/shekh-zaib" className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+        <FiLinkedin className="w-6 h-6" />
+      </a>
+    </div>
+        <p className="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2025 Shekh Zaib. All rights reserved.
+        </p>
+    </div>
+
         </div>
       </div>
     </div>

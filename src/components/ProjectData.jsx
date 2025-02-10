@@ -3,8 +3,16 @@ import dashboard from '../assets/E-Commerce.png';
 import newspaper from '../assets/Newspaper.png';
 import co2 from '../assets/co2.jpg';
 import googledoc from '../assets/googleDoc.png';
+import genie from '../assets/genie.png';
 
 const ProjectData = [
+    {
+      image: genie,
+      title: "Genie AI ",
+      description: "Genie Ai is a platform from which you can ask coding related questions and get answers from the community. It is a platform where you can ask questions, like ChatGPT, and get answers.",
+      tags: ["Python", "Streamlit", "LangChain", "Ollama", "DeekSeek"],
+      link: "https://github.com/zaib-shekh/Genie-AI"
+    },
     {
       image: concrete, // Update with actual paths
       title: 'Concrete Compressive Strength Predictor | Machine Learning',
