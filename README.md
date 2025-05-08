@@ -18,9 +18,6 @@ This guide explains how to deploy a portfolio website built with Vite, ReactJS, 
    ```Bash
         git clone https://github.com/zaib-shekh/my-portfolio.git
    ```
-  Replace <repository-url> with your repository link (e.g., 
-  https://github.com/zaib-shekh/my-portfolio.git).
-  
   3. List the cloned folders using:
    ```Bash
         ls
@@ -93,7 +90,7 @@ Example:
          gcloud app browse
    ```
 This command will provide a URL. Click the URL to visit your deployed site.
-You can visit my portfolio at  https://vital-plating-443217-k7.el.r.appspot.com/
 ### NOTE: Make Sure you have created and upload reactjs file in your Github
+free trial of GCP is ended so it currently not working.
 
 
