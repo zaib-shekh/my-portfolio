@@ -263,3 +263,20 @@ body.dark {
 .bg-green-200.dark:hover {
   background-color: #6B8E23;
 }
+
+/* Add this to your src/index.css file */
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  to { transform: translate(0); }
+}
+
+/* Add a class for the glitch effect on hover */
+.glitch-hover:hover {
+  animation: glitch 0.2s linear;
+  text-shadow: 0 0 8px #4ade80, 0 0 20px #4ade80; /* Green glow on hover */
+}

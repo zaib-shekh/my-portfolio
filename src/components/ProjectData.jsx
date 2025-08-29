@@ -4,8 +4,16 @@ import newspaper from '../assets/Newspaper.png';
 import co2 from '../assets/co2.jpg';
 import googledoc from '../assets/googleDoc.png';
 import genie from '../assets/genie.png';
-
+import cookhub from '../assets/cookhub.png';
 const ProjectData = [
+
+    {
+      image: cookhub,
+      title: "Cook Hub ",
+      description: "Cook hub is a platform from which you can ask receipe related to your given ingradient and get answers. It is a platform where you can ask questions, like ChatGPT, and get answers. powered by huggingface api.",
+      tags: ["ReactJS", "Tailwindcss", "HuggingFace", "Mistral AI", "Vite"],
+      link: "https://github.com/zaib-shekh/Cook-Hub/blob/main/src/assets/recipe-ingredient.png"
+    },
     {
       image: genie,
       title: "Genie AI ",
